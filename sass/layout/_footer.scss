@@ -1,0 +1,9 @@
+/* mise en forme du pied de page */
+footer {
+  background-color: $green;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  bottom: 0%;
+}

@@ -1,0 +1,65 @@
+/* redimensionnement des images */
+img {
+  width: 100%;
+}
+
+/* menu un */
+.grid-menu-1 {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+/* menu deux */
+.grid-menu-2 { 
+  grid-column: 4/6;
+  grid-row: 2/4;
+}
+  
+/* menu trois */
+.grid-menu-3 {
+  grid-column: 2/4;
+  grid-row: 4/6;
+}
+  
+/* menu quatre */
+.grid-menu-4 {
+  grid-column: 4/6;
+  grid-row: 4/6;
+}
+
+/* mise en page de la section "Prochainement" */
+.grid-soon {
+  grid-column: 2/6;
+  grid-row: 6;
+  background-color: $green;
+  color: $yellow;
+  width: 60%;
+  border-radius: 12px;
+  padding: 1.85rem 3rem;
+  margin: auto auto 80px;
+  cursor: default;
+  margin-top: 30px;
+}
+
+/* points de suspension de la section "Prochainement */
+.dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 100px;
+	background-color: $yellow;
+	transform-origin: center;
+	animation: dot-anim 1.4s infinite;
+}
+
+.dot:nth-child(1) {
+	animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+	animation-delay: .2s;
+}
+
+.dot:nth-child(3) {
+	animation-delay: .3s;
+}

@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* animation des points de suspension */
+@keyframes dot-anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* affichage des grille
+[class*="grid-"] {
+  background-color: $pink;
+  border: 2px solid $black;
+  line-height: 40px;
+  border-radius: 6px;
+}
+*/
+body {
+  margin: auto;
+}
+
+/* importations des polices d'écriture */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* typo de l'en-tête */
+header {
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: -7px;
+}
+
+/* typo de la section "Prochainement" */
+.grid-soon {
+  font-family: "Lato";
+  text-align: center;
+  font-size: 3em;
+}
+
+/* typo des liens hypertexte du pied de page */
+a {
+  font-family: "Lato";
+  font-size: 2.2em;
+}
+
+/* mise en forme des liens hypertexte du pied de page */
+a {
+  color: #F5C74C;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* mise en page de l'en-tête */
+header {
+  background-color: #569C87;
+  color: #F5C74C;
+  padding: 1px 15px 1px 15px;
+  cursor: default;
+}
+
+/* grille CSS */
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 100px;
+  grid-auto-rows: auto;
+}
+
+/* mise en forme du pied de page */
+footer {
+  background-color: #569C87;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  bottom: 0%;
+}
+
+/* redimensionnement des images */
+img {
+  width: 100%;
+}
+
+/* menu un */
+.grid-menu-1 {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+/* menu deux */
+.grid-menu-2 {
+  grid-column: 4/6;
+  grid-row: 2/4;
+}
+
+/* menu trois */
+.grid-menu-3 {
+  grid-column: 2/4;
+  grid-row: 4/6;
+}
+
+/* menu quatre */
+.grid-menu-4 {
+  grid-column: 4/6;
+  grid-row: 4/6;
+}
+
+/* mise en page de la section "Prochainement" */
+.grid-soon {
+  grid-column: 2/6;
+  grid-row: 6;
+  background-color: #569C87;
+  color: #F5C74C;
+  width: 60%;
+  border-radius: 12px;
+  padding: 1.85rem 3rem;
+  margin: auto auto 80px;
+  cursor: default;
+  margin-top: 30px;
+}
+
+/* points de suspension de la section "Prochainement */
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #F5C74C;
+  transform-origin: center;
+  animation: dot-anim 1.4s infinite;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */

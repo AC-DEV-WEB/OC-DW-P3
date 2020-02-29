@@ -56,13 +56,13 @@ header {
 }
 
 /* typo des liens hypertexte du pied de page */
-a {
+footer {
   font-family: "Lato";
   font-size: 2.2em;
 }
 
 /* mise en forme des liens hypertexte du pied de page */
-a {
+footer a {
   color: #F5C74C;
   text-decoration: none;
   cursor: pointer;
@@ -90,7 +90,8 @@ footer {
   position: sticky;
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   bottom: 0%;
 }
 

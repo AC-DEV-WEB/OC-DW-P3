@@ -52,7 +52,7 @@ header {
 .grid-soon {
   font-family: "Lato";
   text-align: center;
-  font-size: 3em;
+  font-size: 2.2em;
 }
 
 /* typo des liens hypertexte du pied de page */
@@ -129,12 +129,11 @@ img {
   grid-row: 6;
   background-color: #569C87;
   color: #F5C74C;
-  width: 60%;
   border-radius: 12px;
-  padding: 1.85rem 3rem;
   margin: auto auto 80px;
-  cursor: default;
   margin-top: 30px;
+  width: 30%;
+  cursor: default;
 }
 
 /* points de suspension de la section "Prochainement */

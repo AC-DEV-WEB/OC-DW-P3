@@ -1,5 +1,5 @@
 @import "./utils/variables";
-@import "./utils/animations";
+@import "./utils/keyframes";
 @import "./utils/functions";
 @import "./utils/mixins";
 
@@ -9,12 +9,8 @@
 @import "./components/buttons";
 
 @import "./layout/header";
-@import "./layout/main";
 @import "./layout/footer";
 
 @import "./pages/index";
-@import "./pages/la_note_enchantee";
-@import "./pages/la_palette_du_gout";
-@import "./pages/le_chic_a_la_francaise";
-@import "./pages/le_delice_des_papilles";
+@import "./pages/menus";
 @import "./pages/mentions_legales";

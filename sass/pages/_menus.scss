@@ -1,16 +1,3 @@
-/* grille CSS */
-.grid-restaurant {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: auto;
-  font-family: 'Caveat';
-  color: $brown;
-  background-color: $salmon;
-  margin: 0 10% 6% 10%;
-  box-shadow: $box-shadow;
-}
-
 /* mise en forme du titre h2 */
 h2 {
   font-family: 'Roboto';
@@ -19,33 +6,37 @@ h2 {
   margin-top: 3%; 
 }
 
-/* titre du menu */
-.grid-title {
-  grid-column: 1/6;
-  grid-row: 1;
-  font-family: 'Dancing Script';
-  font-size: 3.2em;
-
-  text-align: center;
-  margin-top: 6%;
-}
-
 /* noms des entrées */
 .grid-entree-title {
-  grid-column: 3;
+  grid-column: 2/5;
   grid-row: 2;
-  font-size: 2.6em;
+  font-size: 2.2em;
   text-align: center;
+}
+
+/* mise en forme des bars */
+[class*=-bar-] {
+  margin: auto;
+  width: 80%;
+  height: 10px;
+}
+
+[class*=-left-bar-] {
+  border-radius: 50% 30% 80% 70%;
+}
+
+[class*=-right-bar-] {
+  border-radius: 30% 50% 70% 80%;
 }
 
 /* barre de gauche des entrées */
-.grid-left-bar-entree {
+[class*=-entree-left-] {
   grid-column: 1/3;
   grid-row: 2;
 }
 
 /* barre de droite des entrées */
-.grid-right-bar-entree {
+[class*=-entree-right-] {
   grid-column: 4/6;
   grid-row: 2;
 }
@@ -70,20 +61,20 @@ h2 {
 
 /* noms des plats */
 .grid-dish-title {
-  grid-column: 3;
+  grid-column: 2/5;
   grid-row: 4;
-  font-size: 2.6em;
+  font-size: 2.2em;
   text-align: center;
 }
 
 /* barre de gauche des plats */
-.grid-left-bar-dish {
+[class*=-dish-left-] {
   grid-column: 1/3;
   grid-row: 4;
 }
 
 /* barre de droite des plats */
-.grid-right-bar-dish {
+[class*=-dish-right-] {
   grid-column: 4/6;
   grid-row: 4;
 }
@@ -108,20 +99,20 @@ h2 {
 
 /* noms des desserts */
 .grid-dessert-title {
-  grid-column: 3;
+  grid-column: 2/5;
   grid-row: 6;
-  font-size: 2.6em;
+  font-size: 2.2em;
   text-align: center;
 }
 
 /* barre de gauche des desserts */
-.grid-left-bar-dessert {
+[class*=-dessert-left-] {
   grid-column: 1/3;
   grid-row: 6;
 }
 
 /* barre de droite des desserts */
-.grid-right-bar-dessert {
+[class*=-dessert-right-] {
   grid-column: 4/6;
   grid-row: 6;
 }
@@ -144,65 +135,9 @@ h2 {
   text-align: right;
 }
 
-/* animation de transition de l'effet souligné */
-.underline-animation {
-  position: relative;
-  text-decoration: none;
-  color: $brown;
-  padding: 10px 0;
-}
-
-.underline-animation:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  border-radius: 30%;
-  background: $brown;
-  transition: width 2s ease-in-out;
-}
-
-.underline-animation:hover:after {
-  width: 100%;
-}
-
-/***                                                ***/
-/*** règles CSS lié à la carte "La note enchantée"  ***/
-/***                                                ***/
-
-/* autre mise en forme de la note de musique avec le titre du menu */
-.grid-note {
+/* grille pour ajout de marge en pied de page */
+.grid-footer-marge {
   grid-column: 1/6;
   grid-row: 8;
-  font-family: 'Dancing Script';
-  font-size: 3.2em;
-  font-weight: bolder;
-  text-align: center;
-  margin: 10% 0 10%;
-}
-
-/* mise en forme de la note de musique */
-.fa {
-  font-size: 100px;
-	background: -webkit-linear-gradient(180deg, $orange, $red-pink);
-	-webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* marge automatique des bars de gauche et de droite sur les menus */
-[class*=-bar-] {
-  margin: auto;
-  width: 80%;
-  height: 12px;
-  background: $brown;
-}
-
-[class*=-left-] {
-  border-radius: 50% 30% 80% 70%;
-}
-
-[class*=-right-] {
-  border-radius: 30% 50% 70% 80%;
+  margin-top: 20%;
 }

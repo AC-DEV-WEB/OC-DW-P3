@@ -1,0 +1,61 @@
+/* grille CSS "La palette du goût" */
+.grid-palette {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: auto;
+  font-family: 'Caveat';
+  background-color: $white;
+  margin: 0 10% 6% 10%;
+  box-shadow: $box-shadow;
+}
+
+/* titre du menu "La palette du goût" */
+.grid-title-palette {
+  grid-column: 1/6;
+  grid-row: 1;
+  font-family: 'Kaushan Script';
+  font-size: 6.2em;
+  text-align: center;
+  margin-top: 6%;
+  background: -webkit-gradient(linear, left top, right top, from($leaf-green), to($light-green));
+  background: linear-gradient(to right, $leaf-green 0%, $light-green 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* mise en forme des bars de "La palette du goût" */
+[class*=-left-bar-palette] {
+  background: -webkit-gradient(linear, left top, right top, from($leaf-green), to($light-green));
+  background: linear-gradient(to right, $leaf-green 0%, $light-green 100%);
+}
+
+[class*=-right-bar-palette] {
+  background: -webkit-gradient(linear, left top, right top, from($light-green), to($leaf-green));
+  background: linear-gradient(to right, $light-green 0%, $leaf-green 100%);
+}
+
+/* animation de transition de l'effet souligné "La palette du goût" */
+.underline-animation-palette {
+  position: relative;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.underline-animation-palette:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 30%;
+  background: -webkit-gradient(linear, left top, right top, from($leaf-green), to($light-green));
+  background: linear-gradient(to right, $leaf-green 0%, $light-green 100%);
+  transition: width 2s ease-in-out;
+}
+
+.underline-animation-palette:hover:after {
+  width: 100%;
+}

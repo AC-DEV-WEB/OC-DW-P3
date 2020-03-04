@@ -1,0 +1,62 @@
+/* grille CSS "Le délice des papilles" */
+.grid-delice {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: auto;
+  font-family: 'Caveat';
+  background-color: $grey;
+  margin: 0 10% 6% 10%;
+  box-shadow: $box-shadow;
+}
+
+/* titre du menu "Le délice des papilles" */
+.grid-title-delice {
+  grid-column: 1/6;
+  grid-row: 1;
+  font-family: 'Dancing Script';
+  font-size: 6.2em;
+  text-align: center;
+  margin-top: 6%;
+  background: -webkit-gradient(linear, left top, right top, from($blue), to($azur));
+  background: linear-gradient(to right, $blue 0%, $azur 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid-entree-left-bar-delice, .grid-entree-right-bar-delice {
+  background: $blue;
+}
+
+.grid-dish-left-bar-delice, .grid-dish-right-bar-delice {
+  background: $light-blue;
+}
+
+.grid-dessert-left-bar-delice, .grid-dessert-right-bar-delice {
+  background: $azur;
+}
+
+/* animation de transition de l'effet souligné "Le délice des papilles" */
+.underline-animation-delice {
+  position: relative;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.underline-animation-delice:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 30%;
+  background: -webkit-gradient(linear, left top, right top, from($blue), to($azur));
+  background: linear-gradient(to right, $blue 0%, $azur 100%);
+  transition: width 2s ease-in-out;
+}
+
+.underline-animation-delice:hover:after {
+  width: 100%;
+}

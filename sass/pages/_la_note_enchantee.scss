@@ -1,14 +1,9 @@
 /* grille CSS "La note enchantée" */
 .grid-note {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: auto;
+  @include grid-menu;
   font-family: 'Caveat';
   color: $brown;
   background-color: $salmon;
-  margin: 0 10% 6% 10%;
-  box-shadow: $box-shadow;
 }
 
 /* titre du menu de "La note enchantée" */
@@ -47,24 +42,5 @@
 
 /* animation de transition de l'effet souligné de "La note enchantée" */
 .underline-animation-note {
-  position: relative;
-  text-decoration: none;
-  color: $brown;
-  padding: 10px 0;
-}
-
-.underline-animation-note:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  border-radius: 30%;
-  background: $brown;
-  transition: width 2s ease-in-out;
-}
-
-.underline-animation-note:hover:after {
-  width: 100%;
+  @include underline-animation($brown, $brown);
 }

@@ -1,0 +1,31 @@
+/* mixins */
+@mixin grid-menu{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: auto;
+  margin: 0 10% 6% 10%;
+  box-shadow: $box-shadow;
+}
+
+/* animation de transition de l'effet souligné */
+@mixin underline-animation($color-1, $color-2) {
+  position: relative;
+  text-decoration: none;
+  padding: 10px 0;
+  &:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 30%;
+    background: -webkit-gradient(linear, left top, right top, from($color-1), to($color-2));
+    background: linear-gradient(to right, $color-1 0%, $color-2 100%);
+    transition: width 2s ease-in-out;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}

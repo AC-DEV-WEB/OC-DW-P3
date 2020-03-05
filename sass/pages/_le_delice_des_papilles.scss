@@ -1,13 +1,8 @@
 /* grille CSS "Le délice des papilles" */
 .grid-delice {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: auto;
+  @include grid-menu;
   font-family: 'Caveat';
   background-color: $grey;
-  margin: 0 10% 6% 10%;
-  box-shadow: $box-shadow;
 }
 
 /* titre du menu "Le délice des papilles" */
@@ -39,24 +34,5 @@
 
 /* animation de transition de l'effet souligné "Le délice des papilles" */
 .underline-animation-delice {
-  position: relative;
-  text-decoration: none;
-  padding: 10px 0;
-}
-
-.underline-animation-delice:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  border-radius: 30%;
-  background: -webkit-gradient(linear, left top, right top, from($blue), to($azur));
-  background: linear-gradient(to right, $blue 0%, $azur 100%);
-  transition: width 2s ease-in-out;
-}
-
-.underline-animation-delice:hover:after {
-  width: 100%;
+  @include underline-animation($blue, $azur);
 }

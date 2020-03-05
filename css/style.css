@@ -28,6 +28,8 @@
     transform: translate3d(4px, 0, 0);
   }
 }
+/* mixins */
+/* animation de transition de l'effet souligné */
 /* affichage des grille
 [class*="grid-"] {
   background-color: $pink;
@@ -388,11 +390,11 @@ h2 {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   grid-auto-rows: auto;
+  margin: 0 10% 6% 10%;
+  box-shadow: 1px 1px 18px #AAAAAA;
   font-family: "Caveat";
   color: #3D1319;
   background-color: #FCDFDB;
-  margin: 0 10% 6% 10%;
-  box-shadow: 1px 1px 18px #AAAAAA;
 }
 
 /* titre du menu de "La note enchantée" */
@@ -433,10 +435,8 @@ h2 {
 .underline-animation-note {
   position: relative;
   text-decoration: none;
-  color: #3D1319;
   padding: 10px 0;
 }
-
 .underline-animation-note:after {
   content: "";
   position: absolute;
@@ -445,10 +445,10 @@ h2 {
   width: 0;
   height: 6px;
   border-radius: 30%;
-  background: #3D1319;
+  background: -webkit-gradient(linear, left top, right top, from(#3D1319), to(#3D1319));
+  background: linear-gradient(to right, #3D1319 0%, #3D1319 100%);
   transition: width 2s ease-in-out;
 }
-
 .underline-animation-note:hover:after {
   width: 100%;
 }
@@ -459,10 +459,10 @@ h2 {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   grid-auto-rows: auto;
-  font-family: "Caveat";
-  background-color: #FDFFFD;
   margin: 0 10% 6% 10%;
   box-shadow: 1px 1px 18px #AAAAAA;
+  font-family: "Caveat";
+  background-color: #FDFFFD;
 }
 
 /* titre du menu "La palette du goût" */
@@ -497,7 +497,6 @@ h2 {
   text-decoration: none;
   padding: 10px 0;
 }
-
 .underline-animation-palette:after {
   content: "";
   position: absolute;
@@ -510,7 +509,6 @@ h2 {
   background: linear-gradient(to right, #43973D 0%, #BEFF7F 100%);
   transition: width 2s ease-in-out;
 }
-
 .underline-animation-palette:hover:after {
   width: 100%;
 }
@@ -521,11 +519,11 @@ h2 {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   grid-auto-rows: auto;
+  margin: 0 10% 6% 10%;
+  box-shadow: 1px 1px 18px #AAAAAA;
   font-family: "Times New Roman";
   font-size: small;
   background-color: #FFF4FE;
-  margin: 0 10% 6% 10%;
-  box-shadow: 1px 1px 18px #AAAAAA;
 }
 
 /* titre du menu "Le chic à la française" */
@@ -574,7 +572,6 @@ h2 {
   text-decoration: none;
   padding: 10px 0;
 }
-
 .underline-animation-chic:after {
   content: "";
   position: absolute;
@@ -587,7 +584,6 @@ h2 {
   background: linear-gradient(to right, #C67412 0%, #6E4CCC 100%);
   transition: width 2s ease-in-out;
 }
-
 .underline-animation-chic:hover:after {
   width: 100%;
 }
@@ -598,10 +594,10 @@ h2 {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   grid-auto-rows: auto;
-  font-family: "Caveat";
-  background-color: #EDEFEF;
   margin: 0 10% 6% 10%;
   box-shadow: 1px 1px 18px #AAAAAA;
+  font-family: "Caveat";
+  background-color: #EDEFEF;
 }
 
 /* titre du menu "Le délice des papilles" */
@@ -637,7 +633,6 @@ h2 {
   text-decoration: none;
   padding: 10px 0;
 }
-
 .underline-animation-delice:after {
   content: "";
   position: absolute;
@@ -650,7 +645,6 @@ h2 {
   background: linear-gradient(to right, #0228DD 0%, #5EB4FF 100%);
   transition: width 2s ease-in-out;
 }
-
 .underline-animation-delice:hover:after {
   width: 100%;
 }

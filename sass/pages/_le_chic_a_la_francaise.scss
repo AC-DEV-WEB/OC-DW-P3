@@ -1,14 +1,9 @@
 /* grille CSS "Le chic à la française" */
 .grid-chic {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: auto;
+  @include grid-menu;
   font-family: 'Times New Roman';
   font-size: small;
   background-color: $light-pink;
-  margin: 0 10% 6% 10%;
-  box-shadow: $box-shadow;
 }
 
 /* titre du menu "Le chic à la française" */
@@ -53,24 +48,5 @@
 
 /* animation de transition de l'effet souligné "Le chic à la française" */
 .underline-animation-chic {
-  position: relative;
-  text-decoration: none;
-  padding: 10px 0;
-}
-
-.underline-animation-chic:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  border-radius: 30%;
-  background: -webkit-gradient(linear, left top, right top, from($orange), to($purple));
-  background: linear-gradient(to right, $orange 0%, $purple 100%);
-  transition: width 2s ease-in-out;
-}
-
-.underline-animation-chic:hover:after {
-  width: 100%;
+  @include underline-animation($orange, $purple);
 }

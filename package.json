@@ -7,8 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "AC-DEV-WEB",
-  "license": "MIT"
+  "license": "MIT",
+  "browserslist": "last 4 versions"
 }

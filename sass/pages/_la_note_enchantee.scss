@@ -14,6 +14,7 @@
   font-size: 5.2em;
   text-align: center;
   margin-top: 6%;
+  @include mobile-large-font;
 }
 
 /* mise en forme de la note de musique */
@@ -23,6 +24,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @include mobile-small-font;
 }
 
 /* autre mise en forme de la note de musique */
@@ -33,6 +35,7 @@
   font-size: 4.2em;
   text-align: center;
   margin: 10% 0 10%;
+  @include mobile-large-font;
 }
 
 /* mise en forme des bars de "La note enchantée" */

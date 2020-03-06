@@ -16,8 +16,14 @@ $blue: #0228DD;
 $light-blue: #0670F3;
 $azur: #5EB4FF;
 $white: #FDFFFD;
-$leaf-green: #43973D;
+$green-mint: #43973D;
 $light-green: #BEFF7F;
 
 /* snippet */
 $box-shadow: 1px 1px 18px #AAAAAA;
+
+/* breakpoints */
+$breakpoints: (
+  mobile: 767px,
+  tablet: 768px
+);

@@ -19,6 +19,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @include mobile-medium-font;
 }
 
 .grid-entree-left-bar-chic, .grid-entree-right-bar-chic {

@@ -1,11 +1,13 @@
 /* mise en forme de l'en-tête */
-header {
+header, .header-title {
   font-family: 'Montserrat';
-  font-size: 2em;
+  font-size: 1.4em;
   text-align: center;
   letter-spacing: -7px;
   background-color: $green;
   color: $yellow;
   padding: 1px 15px 1px 15px;
+  text-decoration: none;
   cursor: default;
+  @include mobile-small-font;
 }

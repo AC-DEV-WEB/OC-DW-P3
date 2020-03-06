@@ -4,6 +4,7 @@
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 100px;
   grid-auto-rows: auto;
+  @include mobile-grid-gap;
 }
 
 /* menu un */
@@ -46,8 +47,9 @@
   border-radius: 12px;
   margin: auto auto 80px;
   margin-top: 30px;
-  width: 55%;
+  width: 60%;
   cursor: default;
+  @include mobile-small-font;
 }
 
 /* points de suspension de la section "Prochainement */
@@ -58,7 +60,7 @@
 	border-radius: 100px;
 	background-color: $yellow;
 	transform-origin: center;
-	animation: dot-anim 1.4s infinite;
+  animation: dot-anim 1.4s infinite;
 }
 
 .dot:nth-child(1) {

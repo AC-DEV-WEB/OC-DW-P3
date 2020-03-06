@@ -13,25 +13,26 @@
   font-size: 6.2em;
   text-align: center;
   margin-top: 6%;
-  background: -webkit-gradient(linear, left top, right top, from($leaf-green), to($light-green));
-  background: linear-gradient(to right, $leaf-green 0%, $light-green 100%);
+  background: -webkit-gradient(linear, left top, right top, from($green-mint), to($light-green));
+  background: linear-gradient(to right, $green-mint 0%, $light-green 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @include mobile-large-font;
 }
 
 /* mise en forme des bars de "La palette du goût" */
 [class*=-left-bar-palette] {
-  background: -webkit-gradient(linear, left top, right top, from($leaf-green), to($light-green));
-  background: linear-gradient(to right, $leaf-green 0%, $light-green 100%);
+  background: -webkit-gradient(linear, left top, right top, from($green-mint), to($light-green));
+  background: linear-gradient(to right, $green-mint 0%, $light-green 100%);
 }
 
 [class*=-right-bar-palette] {
-  background: -webkit-gradient(linear, left top, right top, from($light-green), to($leaf-green));
-  background: linear-gradient(to right, $light-green 0%, $leaf-green 100%);
+  background: -webkit-gradient(linear, left top, right top, from($light-green), to($green-mint));
+  background: linear-gradient(to right, $light-green 0%, $green-mint 100%);
 }
 
 /* animation de transition de l'effet souligné "La palette du goût" */
 .underline-animation-palette {
-  @include underline-animation($leaf-green, $light-green);
+  @include underline-animation($green-mint, $light-green);
 }

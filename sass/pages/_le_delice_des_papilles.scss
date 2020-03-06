@@ -18,6 +18,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @include mobile-large-font;
 }
 
 .grid-entree-left-bar-delice, .grid-entree-right-bar-delice {

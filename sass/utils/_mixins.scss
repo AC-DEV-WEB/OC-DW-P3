@@ -6,6 +6,7 @@
   grid-auto-rows: auto;
   margin: 0 10% 6% 10%;
   box-shadow: $box-shadow;
+  @include mobile-smaller-font;
 }
 
 /* animation de transition de l'effet souligné */
@@ -27,5 +28,43 @@
   }
   &:hover:after {
     width: 100%;
+  }
+}
+
+@mixin mobile-smaller-font {
+  @media screen and (max-width: map-get($breakpoints, mobile)){
+    font-size: 0.6em;
+  }
+}
+
+@mixin mobile-small-font {
+  @media screen and (max-width: map-get($breakpoints, mobile)){
+    font-size: 1em;
+    letter-spacing: 0px;
+  }
+}
+
+@mixin mobile-medium-font {
+  @media screen and (max-width: map-get($breakpoints, mobile)){
+    font-size: 1.6em;
+  }
+}
+
+@mixin mobile-large-font {
+  @media screen and (max-width: map-get($breakpoints, mobile)){
+    font-size: 3em;
+  }
+}
+
+@mixin mobile-grid-gap {
+  @media screen and (max-width: map-get($breakpoints, mobile)){
+    grid-gap: 12px;
+    margin: 12% 0 20% 0;
+  }
+}
+
+@mixin tablet-only {
+  @media screen and (max-width: map-get($breakpoints, tablet)){
+    font-size: 1.6em;
   }
 }

@@ -33,20 +33,20 @@
 }
 
 @mixin mobile-smaller-font {
-  @media screen and (max-width: map-get($breakpoints, mobile)){
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
     font-size: 0.5em;
   }
 }
 
 @mixin mobile-small-font {
-  @media screen and (max-width: map-get($breakpoints, mobile)){
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
     font-size: 1em;
     letter-spacing: 0px;
   }
 }
 
 @mixin mobile-medium-font {
-  @media screen and (max-width: map-get($breakpoints, mobile)){
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
     font-size: 1.6em;
     width: 50%;
     margin-left: 24%;
@@ -54,32 +54,32 @@
 }
 
 @mixin mobile-large-font {
-  @media screen and (max-width: map-get($breakpoints, mobile)){
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
     font-size: 3em;
   }
 }
 
 @mixin mobile-grid-gap {
-  @media screen and (max-width: map-get($breakpoints, mobile)){
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
     grid-gap: 12px;
     margin: 12% 0 20% 0;
   }
 }
 
 @mixin tablet-smaller-font {
-  @media screen and (max-width: map-get($breakpoints, tablet)){
+  @media screen and (min-width: map-get($breakpoints, tablet-min)) and (max-width: map-get($breakpoints, tablet-max)){
     font-size: 0.7em;
   }
 }
 
 @mixin tablet-small-font {
-  @media screen and (max-width: map-get($breakpoints, tablet)){
+  @media screen and (min-width: map-get($breakpoints, tablet-min)) and (max-width: map-get($breakpoints, tablet-max)){
     font-size: 1.2em;
   }
 }
 
 @mixin tablet-medium-font {
-  @media screen and (max-width: map-get($breakpoints, tablet)){
+  @media screen and (min-width: map-get($breakpoints, tablet-min)) and (max-width: map-get($breakpoints, tablet-max)){
     font-size: 1.8em;
     width: 50%;
     margin-left: 24%;
@@ -87,13 +87,13 @@
 }
 
 @mixin tablet-large-font {
-  @media screen and (max-width: map-get($breakpoints, tablet)){
+  @media screen and (min-width: map-get($breakpoints, tablet-min)) and (max-width: map-get($breakpoints, tablet-max)){
     font-size: 5em;
   }
 }
 
 @mixin tablet-grid-gap {
-  @media screen and (max-width: map-get($breakpoints, tablet)){
+  @media screen and (min-width: map-get($breakpoints, tablet-min)) and (max-width: map-get($breakpoints, tablet-max)){
     grid-gap: 50px;
     margin: 12% 0 20% 0;
   }

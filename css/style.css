@@ -178,13 +178,13 @@ header, .header-title {
   text-decoration: none;
   cursor: default;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   header, .header-title {
     font-size: 1em;
     letter-spacing: 0px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   header, .header-title {
     font-size: 1.2em;
   }
@@ -207,13 +207,13 @@ footer {
   padding-right: 30px;
   bottom: 0%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   footer {
     font-size: 1em;
     letter-spacing: 0px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   footer {
     font-size: 1.2em;
   }
@@ -226,13 +226,13 @@ footer {
   grid-gap: 100px;
   grid-auto-rows: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-index {
     grid-gap: 12px;
     margin: 12% 0 20% 0;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-index {
     grid-gap: 50px;
     margin: 12% 0 20% 0;
@@ -286,7 +286,7 @@ footer {
   width: 60%;
   cursor: default;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-soon {
     font-size: 1em;
     letter-spacing: 0px;
@@ -349,13 +349,13 @@ h2 {
   text-align: center;
   margin-top: 3%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-size: 1em;
     letter-spacing: 0px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   h2 {
     font-size: 1.8em;
     width: 50%;
@@ -370,14 +370,14 @@ h2 {
   font-size: 2.2em;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-entree-title {
     font-size: 1.6em;
     width: 50%;
     margin-left: 24%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-entree-title {
     font-size: 1.8em;
     width: 50%;
@@ -428,14 +428,14 @@ h2 {
   font-size: 2.2em;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-dish-title {
     font-size: 1.6em;
     width: 50%;
     margin-left: 24%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-dish-title {
     font-size: 1.8em;
     width: 50%;
@@ -480,14 +480,14 @@ h2 {
   font-size: 2.2em;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-dessert-title {
     font-size: 1.6em;
     width: 50%;
     margin-left: 24%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-dessert-title {
     font-size: 1.8em;
     width: 50%;
@@ -545,12 +545,12 @@ h2 {
   color: #3D1319;
   background-color: #FCDFDB;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-note {
     font-size: 0.5em;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-note {
     font-size: 0.7em;
   }
@@ -565,12 +565,12 @@ h2 {
   text-align: center;
   margin-top: 6%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-title-note {
     font-size: 3em;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-title-note {
     font-size: 5em;
   }
@@ -583,13 +583,13 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .fa {
     font-size: 1em;
     letter-spacing: 0px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .fa {
     font-size: 1.2em;
   }
@@ -604,12 +604,12 @@ h2 {
   text-align: center;
   margin: 10% 0 10%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-note-music {
     font-size: 3em;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-note-music {
     font-size: 5em;
   }
@@ -652,12 +652,12 @@ h2 {
   font-family: "Caveat";
   background-color: #FDFFFD;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-palette {
     font-size: 0.5em;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-palette {
     font-size: 0.7em;
   }
@@ -677,12 +677,12 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-title-palette {
     font-size: 3em;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-title-palette {
     font-size: 5em;
   }
@@ -726,12 +726,12 @@ h2 {
   font-size: small;
   background-color: #FFF4FE;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-chic {
     font-size: 0.5em;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-chic {
     font-size: 0.7em;
   }
@@ -751,14 +751,14 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-title-chic {
     font-size: 1.6em;
     width: 50%;
     margin-left: 24%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-title-chic {
     font-size: 1.8em;
     width: 50%;
@@ -816,12 +816,12 @@ h2 {
   font-family: "Caveat";
   background-color: #EDEFEF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-delice {
     font-size: 0.5em;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-delice {
     font-size: 0.7em;
   }
@@ -841,12 +841,12 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-title-delice {
     font-size: 3em;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-title-delice {
     font-size: 5em;
   }

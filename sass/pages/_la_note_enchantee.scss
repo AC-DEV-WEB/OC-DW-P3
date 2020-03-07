@@ -15,6 +15,7 @@
   text-align: center;
   margin-top: 6%;
   @include mobile-large-font;
+  @include tablet-large-font;
 }
 
 /* mise en forme de la note de musique */
@@ -25,6 +26,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @include mobile-small-font;
+  @include tablet-small-font;
 }
 
 /* autre mise en forme de la note de musique */
@@ -36,11 +38,7 @@
   text-align: center;
   margin: 10% 0 10%;
   @include mobile-large-font;
-}
-
-/* mise en forme des bars de "La note enchantée" */
-[class*=-bar-note] {
-  background: $brown;
+  @include tablet-large-font;
 }
 
 /* animation de transition de l'effet souligné de "La note enchantée" */

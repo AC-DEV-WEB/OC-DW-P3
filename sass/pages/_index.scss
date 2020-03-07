@@ -5,6 +5,7 @@
   grid-gap: 100px;
   grid-auto-rows: auto;
   @include mobile-grid-gap;
+  @include tablet-grid-gap;
 }
 
 /* menu un */
@@ -75,17 +76,15 @@
 	animation-delay: .3s;
 }
 
-/* mise en forme des images et déclaration de l'animation de transition */
-img {
+/* mise en forme des images et animation de transition "effet zoom" */
+.image {
   width: 100%;
   height: 100%;
   transition: 0.2s ease;
-}
-
-/* agrandissement de l'image et réduction de l'opacité au survol de la souris */
-img:hover {
-  transform: scale(1.2);
-  opacity: 33%;
+  &:hover{
+    transform: scale(1.2);
+    opacity: 33%;
+  }
 }
 
 /* permet de faire tenir l'image dans son conteneur */

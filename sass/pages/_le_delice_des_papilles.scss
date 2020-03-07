@@ -19,18 +19,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @include mobile-large-font;
-}
-
-.grid-entree-left-bar-delice, .grid-entree-right-bar-delice {
-  background: $blue;
-}
-
-.grid-dish-left-bar-delice, .grid-dish-right-bar-delice {
-  background: $light-blue;
-}
-
-.grid-dessert-left-bar-delice, .grid-dessert-right-bar-delice {
-  background: $azur;
+  @include tablet-large-font;
 }
 
 /* animation de transition de l'effet souligné "Le délice des papilles" */

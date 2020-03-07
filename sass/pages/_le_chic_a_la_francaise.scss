@@ -2,7 +2,7 @@
 .grid-chic {
   @include grid-menu;
   font-family: 'Times New Roman';
-  font-size: small;
+  font-size: calc(1vw + 10px);
   background-color: $light-pink;
 }
 
@@ -20,18 +20,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @include mobile-medium-font;
-}
-
-.grid-entree-left-bar-chic, .grid-entree-right-bar-chic {
-  background: $orange;
-}
-
-.grid-dish-left-bar-chic, .grid-dish-right-bar-chic {
-  background: $light-purple;
-}
-
-.grid-dessert-left-bar-chic, .grid-dessert-right-bar-chic {
-  background: $purple;
+  @include tablet-medium-font;
 }
 
 /* couleurs de chaque section "Le chic à la française" */

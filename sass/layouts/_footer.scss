@@ -10,4 +10,5 @@ footer {
   padding-right: 30px;
   bottom: 0%;
   @include mobile-small-font;
+  @include tablet-small-font;
 }

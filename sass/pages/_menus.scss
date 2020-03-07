@@ -5,6 +5,7 @@ h2 {
   text-align: center;
   margin-top: 3%;
   @include mobile-small-font;
+  @include tablet-medium-font;
 }
 
 /* noms des entrées */
@@ -14,21 +15,13 @@ h2 {
   font-size: 2.2em;
   text-align: center;
   @include mobile-medium-font;
+  @include tablet-medium-font;
 }
 
 /* mise en forme des bars */
 [class*=-bar-] {
   margin: auto;
   width: 80%;
-  height: 10px;
-}
-
-[class*=-left-bar-] {
-  border-radius: 50% 30% 80% 70%;
-}
-
-[class*=-right-bar-] {
-  border-radius: 30% 50% 70% 80%;
 }
 
 /* barre de gauche des entrées */
@@ -68,6 +61,7 @@ h2 {
   font-size: 2.2em;
   text-align: center;
   @include mobile-medium-font;
+  @include tablet-medium-font;
 }
 
 /* barre de gauche des plats */
@@ -107,6 +101,7 @@ h2 {
   font-size: 2.2em;
   text-align: center;
   @include mobile-medium-font;
+  @include tablet-medium-font;
 }
 
 /* barre de gauche des desserts */

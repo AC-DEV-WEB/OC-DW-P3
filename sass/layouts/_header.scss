@@ -10,4 +10,5 @@ header, .header-title {
   text-decoration: none;
   cursor: default;
   @include mobile-small-font;
+  @include tablet-small-font;
 }

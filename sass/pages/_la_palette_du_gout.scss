@@ -19,17 +19,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @include mobile-large-font;
-}
-
-/* mise en forme des bars de "La palette du goût" */
-[class*=-left-bar-palette] {
-  background: -webkit-gradient(linear, left top, right top, from($green-mint), to($light-green));
-  background: linear-gradient(to right, $green-mint 0%, $light-green 100%);
-}
-
-[class*=-right-bar-palette] {
-  background: -webkit-gradient(linear, left top, right top, from($light-green), to($green-mint));
-  background: linear-gradient(to right, $light-green 0%, $green-mint 100%);
+  @include tablet-large-font;
 }
 
 /* animation de transition de l'effet souligné "La palette du goût" */

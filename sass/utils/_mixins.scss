@@ -7,6 +7,7 @@
   margin: 0 10% 6% 10%;
   box-shadow: $box-shadow;
   @include mobile-smaller-font;
+  @include tablet-smaller-font;
 }
 
 /* animation de transition de l'effet souligné */
@@ -33,7 +34,7 @@
 
 @mixin mobile-smaller-font {
   @media screen and (max-width: map-get($breakpoints, mobile)){
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
 }
 
@@ -47,6 +48,8 @@
 @mixin mobile-medium-font {
   @media screen and (max-width: map-get($breakpoints, mobile)){
     font-size: 1.6em;
+    width: 50%;
+    margin-left: 24%;
   }
 }
 
@@ -63,8 +66,35 @@
   }
 }
 
-@mixin tablet-only {
+@mixin tablet-smaller-font {
   @media screen and (max-width: map-get($breakpoints, tablet)){
-    font-size: 1.6em;
+    font-size: 0.7em;
+  }
+}
+
+@mixin tablet-small-font {
+  @media screen and (max-width: map-get($breakpoints, tablet)){
+    font-size: 1.2em;
+  }
+}
+
+@mixin tablet-medium-font {
+  @media screen and (max-width: map-get($breakpoints, tablet)){
+    font-size: 1.8em;
+    width: 50%;
+    margin-left: 24%;
+  }
+}
+
+@mixin tablet-large-font {
+  @media screen and (max-width: map-get($breakpoints, tablet)){
+    font-size: 5em;
+  }
+}
+
+@mixin tablet-grid-gap {
+  @media screen and (max-width: map-get($breakpoints, tablet)){
+    grid-gap: 50px;
+    margin: 12% 0 20% 0;
   }
 }

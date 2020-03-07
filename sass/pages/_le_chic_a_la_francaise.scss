@@ -2,7 +2,7 @@
 .grid-chic {
   @include grid-menu;
   font-family: 'Times New Roman';
-  font-size: calc(1vw + 10px);
+  font-size: small;
   background-color: $light-pink;
 }
 
@@ -16,7 +16,6 @@
   margin-top: 6%;
   background: -webkit-gradient(linear, left top, right top, from($orange), to($purple));
   background: linear-gradient(to right, $orange 0%, $purple 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @include mobile-medium-font;

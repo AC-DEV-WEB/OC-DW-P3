@@ -52,6 +52,7 @@ h2 {
   font-weight: bolder;
   padding-right: 22%;
   text-align: right;
+  @include mobile-line-height;
 }
 
 /* noms des plats */
@@ -92,6 +93,7 @@ h2 {
   font-weight: bolder;
   padding-right: 22%;
   text-align: right;
+  @include mobile-line-height;
 }
 
 /* noms des desserts */
@@ -132,6 +134,7 @@ h2 {
   font-weight: bolder;
   padding-right: 22%;
   text-align: right;
+  @include mobile-line-height;
 }
 
 /* grille pour ajout de marge en pied de page */

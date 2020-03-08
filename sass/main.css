@@ -31,6 +31,7 @@
             transform: scale(1);
   }
 }
+
 /* animation "secouer" des boutons */
 @-webkit-keyframes wiggle {
   10%, 90% {
@@ -68,6 +69,7 @@
             transform: translate3d(4px, 0, 0);
   }
 }
+
 /* mixins */
 /* animation de transition de l'effet souligné */
 /* affichage des grille
@@ -85,68 +87,76 @@ body {
 
 /* importations des polices d'écriture */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
   src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
-  font-family: "Devonshire";
+  font-family: 'Devonshire';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local("Devonshire-Regular"), url(https://fonts.gstatic.com/s/devonshire/v8/46kqlbDwWirWr4gtBD2Bb0Jg0g.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
-  font-family: "Dancing Script";
+  font-family: 'Dancing Script';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/dancingscript/v14/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup8.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
-  font-family: "Caveat";
+  font-family: 'Caveat';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local("Caveat Regular"), local("Caveat-Regular"), url(https://fonts.gstatic.com/s/caveat/v7/Wnz6HAc5bAfYB2Q7ZjYY.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
-  font-family: "Croissant One";
+  font-family: 'Croissant One';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local("Croissant One"), local("CroissantOne-Regular"), url(https://fonts.gstatic.com/s/croissantone/v7/3y9n6bU9bTPg4m8NDy3Kq24UA31gng.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
-  font-family: "Kaushan Script";
+  font-family: 'Kaushan Script';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local("Kaushan Script"), local("KaushanScript-Regular"), url(https://fonts.gstatic.com/s/kaushanscript/v8/vm8vdRfvXFLG3OLnsO15WYS5DG74wNI.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* mise en forme des liens hypertexte du pied de page */
 footer a {
   color: #F5C74C;
@@ -168,7 +178,7 @@ footer a {
 
 /* mise en forme de l'en-tête */
 header, .header-title {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 1.4em;
   text-align: center;
   letter-spacing: -7px;
@@ -178,12 +188,14 @@ header, .header-title {
   text-decoration: none;
   cursor: default;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   header, .header-title {
     font-size: 1em;
     letter-spacing: 0px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   header, .header-title {
     font-size: 1.2em;
@@ -192,7 +204,7 @@ header, .header-title {
 
 /* mise en forme du pied de page */
 footer {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-size: 2.2em;
   background-color: #569C87;
   position: -webkit-sticky;
@@ -207,12 +219,14 @@ footer {
   padding-right: 30px;
   bottom: 0%;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   footer {
     font-size: 1em;
     letter-spacing: 0px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   footer {
     font-size: 1.2em;
@@ -221,17 +235,21 @@ footer {
 
 /* grille CSS */
 .grid-index {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
   grid-gap: 100px;
   grid-auto-rows: auto;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-index {
     grid-gap: 12px;
     margin: 12% 0 20% 0;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-index {
     grid-gap: 50px;
@@ -241,7 +259,11 @@ footer {
 
 /* menu un */
 .grid-menu-1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
   grid-column: 2/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   grid-row: 2/4;
   -webkit-box-shadow: 1px 1px 18px #AAAAAA;
           box-shadow: 1px 1px 18px #AAAAAA;
@@ -249,7 +271,11 @@ footer {
 
 /* menu deux */
 .grid-menu-2 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
   grid-column: 5/8;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   grid-row: 2/4;
   -webkit-box-shadow: 1px 1px 18px #AAAAAA;
           box-shadow: 1px 1px 18px #AAAAAA;
@@ -257,7 +283,11 @@ footer {
 
 /* menu trois */
 .grid-menu-3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
   grid-column: 2/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
   grid-row: 4/6;
   -webkit-box-shadow: 1px 1px 18px #AAAAAA;
           box-shadow: 1px 1px 18px #AAAAAA;
@@ -265,7 +295,11 @@ footer {
 
 /* menu quatre */
 .grid-menu-4 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
   grid-column: 5/8;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
   grid-row: 4/6;
   -webkit-box-shadow: 1px 1px 18px #AAAAAA;
           box-shadow: 1px 1px 18px #AAAAAA;
@@ -273,9 +307,12 @@ footer {
 
 /* mise en page de la section "Prochainement" */
 .grid-soon {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
   grid-column: 2/8;
+  -ms-grid-row: 6;
   grid-row: 6;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-size: 2.6em;
   text-align: center;
   background-color: #569C87;
@@ -286,6 +323,7 @@ footer {
   width: 60%;
   cursor: default;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-soon {
     font-size: 1em;
@@ -301,7 +339,6 @@ footer {
   border-radius: 100px;
   background-color: #F5C74C;
   -webkit-transform-origin: center;
-      -ms-transform-origin: center;
           transform-origin: center;
   -webkit-animation: dot-anim 1.4s infinite;
           animation: dot-anim 1.4s infinite;
@@ -313,13 +350,13 @@ footer {
 }
 
 .dot:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
 }
 
 .dot:nth-child(3) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 /* mise en forme des images et animation de transition "effet zoom" */
@@ -327,12 +364,11 @@ footer {
   width: 100%;
   height: 100%;
   -webkit-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
   transition: 0.2s ease;
 }
+
 .image:hover {
   -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
           transform: scale(1.2);
   opacity: 33%;
 }
@@ -344,17 +380,19 @@ footer {
 
 /* mise en forme du titre h2 */
 h2 {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 2.8em;
   text-align: center;
   margin-top: 3%;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-size: 1em;
     letter-spacing: 0px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   h2 {
     font-size: 1.8em;
@@ -365,18 +403,23 @@ h2 {
 
 /* noms des entrées */
 .grid-entree-title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
   grid-column: 2/5;
+  -ms-grid-row: 2;
   grid-row: 2;
   font-size: 2.2em;
   text-align: center;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-entree-title {
-    font-size: 2.1em;
-    width: 55%;
-    margin-left: 22%;
+    font-size: 2em;
+    width: 50%;
+    margin-left: 24%;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-entree-title {
     font-size: 1.8em;
@@ -393,19 +436,28 @@ h2 {
 
 /* barre de gauche des entrées */
 [class*=-entree-left-] {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-column: 1/3;
+  -ms-grid-row: 2;
   grid-row: 2;
 }
 
 /* barre de droite des entrées */
 [class*=-entree-right-] {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
   grid-column: 4/6;
+  -ms-grid-row: 2;
   grid-row: 2;
 }
 
 /* entrées */
 .grid-entree {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
   grid-column: 1/5;
+  -ms-grid-row: 3;
   grid-row: 3;
   font-size: 2em;
   padding-left: 5%;
@@ -413,33 +465,35 @@ h2 {
 
 /* prix des entrées */
 .grid-entree-price {
+  -ms-grid-column: 5;
   grid-column: 5;
+  -ms-grid-row: 3;
   grid-row: 3;
   font-size: 2em;
   font-weight: bolder;
   padding-right: 22%;
   text-align: right;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .grid-entree-price {
-    line-height: 1.5em;
-  }
-}
 
 /* noms des plats */
 .grid-dish-title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
   grid-column: 2/5;
+  -ms-grid-row: 4;
   grid-row: 4;
   font-size: 2.2em;
   text-align: center;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-dish-title {
-    font-size: 2.1em;
-    width: 55%;
-    margin-left: 22%;
+    font-size: 2em;
+    width: 50%;
+    margin-left: 24%;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-dish-title {
     font-size: 1.8em;
@@ -450,19 +504,28 @@ h2 {
 
 /* barre de gauche des plats */
 [class*=-dish-left-] {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-column: 1/3;
+  -ms-grid-row: 4;
   grid-row: 4;
 }
 
 /* barre de droite des plats */
 [class*=-dish-right-] {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
   grid-column: 4/6;
+  -ms-grid-row: 4;
   grid-row: 4;
 }
 
 /* plats */
 .grid-dish {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
   grid-column: 1/5;
+  -ms-grid-row: 5;
   grid-row: 5;
   font-size: 2em;
   padding-left: 5%;
@@ -470,33 +533,35 @@ h2 {
 
 /* prix des plats */
 .grid-dish-price {
+  -ms-grid-column: 5;
   grid-column: 5;
+  -ms-grid-row: 5;
   grid-row: 5;
   font-size: 2em;
   font-weight: bolder;
   padding-right: 22%;
   text-align: right;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .grid-dish-price {
-    line-height: 1.5em;
-  }
-}
 
 /* noms des desserts */
 .grid-dessert-title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
   grid-column: 2/5;
+  -ms-grid-row: 6;
   grid-row: 6;
   font-size: 2.2em;
   text-align: center;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-dessert-title {
-    font-size: 2.1em;
-    width: 55%;
-    margin-left: 22%;
+    font-size: 2em;
+    width: 50%;
+    margin-left: 24%;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-dessert-title {
     font-size: 1.8em;
@@ -507,19 +572,28 @@ h2 {
 
 /* barre de gauche des desserts */
 [class*=-dessert-left-] {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-column: 1/3;
+  -ms-grid-row: 6;
   grid-row: 6;
 }
 
 /* barre de droite des desserts */
 [class*=-dessert-right-] {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
   grid-column: 4/6;
+  -ms-grid-row: 6;
   grid-row: 6;
 }
 
 /* desserts */
 .grid-dessert {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
   grid-column: 1/5;
+  -ms-grid-row: 7;
   grid-row: 7;
   font-size: 2em;
   padding-left: 5%;
@@ -527,49 +601,48 @@ h2 {
 
 /* prix des desserts */
 .grid-dessert-price {
+  -ms-grid-column: 5;
   grid-column: 5;
+  -ms-grid-row: 7;
   grid-row: 7;
   font-size: 2em;
   font-weight: bolder;
   padding-right: 22%;
   text-align: right;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .grid-dessert-price {
-    line-height: 1.5em;
-  }
-}
 
 /* grille pour ajout de marge en pied de page */
 .grid-footer-marge {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-column: 1/6;
+  -ms-grid-row: 8;
   grid-row: 8;
   margin-top: 20%;
 }
 
 /* grille CSS "La note enchantée" */
 .grid-note {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   grid-auto-rows: auto;
   margin: 0 10% 6% 10%;
   -webkit-box-shadow: 1px 1px 18px #AAAAAA;
           box-shadow: 1px 1px 18px #AAAAAA;
-  font-family: "Caveat";
+  font-family: 'Caveat';
   color: #3D1319;
   background-color: #FCDFDB;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-note {
-    font-size: 0.4em;
+    font-size: 0.5em;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .grid-note {
-    line-height: 1.5em;
-  }
-}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-note {
     font-size: 0.7em;
@@ -578,18 +651,23 @@ h2 {
 
 /* titre du menu de "La note enchantée" */
 .grid-title-note {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-column: 1/6;
+  -ms-grid-row: 1;
   grid-row: 1;
-  font-family: "Devonshire";
+  font-family: 'Devonshire';
   font-size: 5.2em;
   text-align: center;
   margin-top: 6%;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-title-note {
     font-size: 3em;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-title-note {
     font-size: 5em;
@@ -603,12 +681,14 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .fa {
     font-size: 1em;
     letter-spacing: 0px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .fa {
     font-size: 1.2em;
@@ -617,18 +697,23 @@ h2 {
 
 /* autre mise en forme de la note de musique */
 .grid-note-music {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-column: 1/6;
+  -ms-grid-row: 8;
   grid-row: 8;
-  font-family: "Devonshire";
+  font-family: 'Devonshire';
   font-size: 4.2em;
   text-align: center;
   margin: 10% 0 10%;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-note-music {
     font-size: 3em;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-note-music {
     font-size: 5em;
@@ -641,6 +726,7 @@ h2 {
   text-decoration: none;
   padding: 10px 0;
 }
+
 .underline-animation-note:after {
   content: "";
   position: absolute;
@@ -650,43 +736,36 @@ h2 {
   height: 6px;
   border-radius: 30%;
   background: -webkit-gradient(linear, left top, right top, from(#3D1319), to(#3D1319));
-  background: -o-linear-gradient(left, #3D1319 0%, #3D1319 100%);
   background: linear-gradient(to right, #3D1319 0%, #3D1319 100%);
   -webkit-transition: width 2s ease-in-out;
-  -o-transition: width 2s ease-in-out;
   transition: width 2s ease-in-out;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .underline-animation-note:after {
-    height: 3px;
-  }
-}
+
 .underline-animation-note:hover:after {
   width: 100%;
 }
 
 /* grille CSS "La palette du goût" */
 .grid-palette {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   grid-auto-rows: auto;
   margin: 0 10% 6% 10%;
   -webkit-box-shadow: 1px 1px 18px #AAAAAA;
           box-shadow: 1px 1px 18px #AAAAAA;
-  font-family: "Caveat";
+  font-family: 'Caveat';
   background-color: #FDFFFD;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-palette {
-    font-size: 0.4em;
+    font-size: 0.5em;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .grid-palette {
-    line-height: 1.5em;
-  }
-}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-palette {
     font-size: 0.7em;
@@ -695,23 +774,27 @@ h2 {
 
 /* titre du menu "La palette du goût" */
 .grid-title-palette {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-column: 1/6;
+  -ms-grid-row: 1;
   grid-row: 1;
-  font-family: "Kaushan Script";
+  font-family: 'Kaushan Script';
   font-size: 6.2em;
   text-align: center;
   margin-top: 6%;
   background: -webkit-gradient(linear, left top, right top, from(#43973D), to(#BEFF7F));
-  background: -o-linear-gradient(left, #43973D 0%, #BEFF7F 100%);
   background: linear-gradient(to right, #43973D 0%, #BEFF7F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-title-palette {
     font-size: 3em;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-title-palette {
     font-size: 5em;
@@ -724,6 +807,7 @@ h2 {
   text-decoration: none;
   padding: 10px 0;
 }
+
 .underline-animation-palette:after {
   content: "";
   position: absolute;
@@ -733,44 +817,37 @@ h2 {
   height: 6px;
   border-radius: 30%;
   background: -webkit-gradient(linear, left top, right top, from(#43973D), to(#BEFF7F));
-  background: -o-linear-gradient(left, #43973D 0%, #BEFF7F 100%);
   background: linear-gradient(to right, #43973D 0%, #BEFF7F 100%);
   -webkit-transition: width 2s ease-in-out;
-  -o-transition: width 2s ease-in-out;
   transition: width 2s ease-in-out;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .underline-animation-palette:after {
-    height: 3px;
-  }
-}
+
 .underline-animation-palette:hover:after {
   width: 100%;
 }
 
 /* grille CSS "Le chic à la française" */
 .grid-chic {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   grid-auto-rows: auto;
   margin: 0 10% 6% 10%;
   -webkit-box-shadow: 1px 1px 18px #AAAAAA;
           box-shadow: 1px 1px 18px #AAAAAA;
-  font-family: "Times New Roman";
+  font-family: 'Times New Roman';
   font-size: small;
   background-color: #FFF4FE;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-chic {
-    font-size: 0.4em;
+    font-size: 0.5em;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .grid-chic {
-    line-height: 1.5em;
-  }
-}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-chic {
     font-size: 0.7em;
@@ -779,25 +856,29 @@ h2 {
 
 /* titre du menu "Le chic à la française" */
 .grid-title-chic {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-column: 1/6;
+  -ms-grid-row: 1;
   grid-row: 1;
-  font-family: "Croissant One";
+  font-family: 'Croissant One';
   font-size: 4.2em;
   text-align: center;
   margin-top: 6%;
   background: -webkit-gradient(linear, left top, right top, from(#C67412), to(#6E4CCC));
-  background: -o-linear-gradient(left, #C67412 0%, #6E4CCC 100%);
   background: linear-gradient(to right, #C67412 0%, #6E4CCC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-title-chic {
-    font-size: 2.1em;
-    width: 55%;
-    margin-left: 22%;
+    font-size: 2em;
+    width: 50%;
+    margin-left: 24%;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-title-chic {
     font-size: 1.8em;
@@ -825,6 +906,7 @@ h2 {
   text-decoration: none;
   padding: 10px 0;
 }
+
 .underline-animation-chic:after {
   content: "";
   position: absolute;
@@ -834,43 +916,36 @@ h2 {
   height: 6px;
   border-radius: 30%;
   background: -webkit-gradient(linear, left top, right top, from(#C67412), to(#6E4CCC));
-  background: -o-linear-gradient(left, #C67412 0%, #6E4CCC 100%);
   background: linear-gradient(to right, #C67412 0%, #6E4CCC 100%);
   -webkit-transition: width 2s ease-in-out;
-  -o-transition: width 2s ease-in-out;
   transition: width 2s ease-in-out;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .underline-animation-chic:after {
-    height: 3px;
-  }
-}
+
 .underline-animation-chic:hover:after {
   width: 100%;
 }
 
 /* grille CSS "Le délice des papilles" */
 .grid-delice {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   grid-auto-rows: auto;
   margin: 0 10% 6% 10%;
   -webkit-box-shadow: 1px 1px 18px #AAAAAA;
           box-shadow: 1px 1px 18px #AAAAAA;
-  font-family: "Caveat";
+  font-family: 'Caveat';
   background-color: #EDEFEF;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-delice {
-    font-size: 0.4em;
+    font-size: 0.5em;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .grid-delice {
-    line-height: 1.5em;
-  }
-}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-delice {
     font-size: 0.7em;
@@ -879,23 +954,27 @@ h2 {
 
 /* titre du menu "Le délice des papilles" */
 .grid-title-delice {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-column: 1/6;
+  -ms-grid-row: 1;
   grid-row: 1;
-  font-family: "Dancing Script";
+  font-family: 'Dancing Script';
   font-size: 6.2em;
   text-align: center;
   margin-top: 6%;
   background: -webkit-gradient(linear, left top, right top, from(#0228DD), to(#5EB4FF));
-  background: -o-linear-gradient(left, #0228DD 0%, #5EB4FF 100%);
   background: linear-gradient(to right, #0228DD 0%, #5EB4FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-title-delice {
     font-size: 3em;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-title-delice {
     font-size: 5em;
@@ -908,6 +987,7 @@ h2 {
   text-decoration: none;
   padding: 10px 0;
 }
+
 .underline-animation-delice:after {
   content: "";
   position: absolute;
@@ -917,19 +997,12 @@ h2 {
   height: 6px;
   border-radius: 30%;
   background: -webkit-gradient(linear, left top, right top, from(#0228DD), to(#5EB4FF));
-  background: -o-linear-gradient(left, #0228DD 0%, #5EB4FF 100%);
   background: linear-gradient(to right, #0228DD 0%, #5EB4FF 100%);
   -webkit-transition: width 2s ease-in-out;
-  -o-transition: width 2s ease-in-out;
   transition: width 2s ease-in-out;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .underline-animation-delice:after {
-    height: 3px;
-  }
-}
+
 .underline-animation-delice:hover:after {
   width: 100%;
 }
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyIsIi4uL3Nhc3MvdXRpbHMvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vc2Fzcy91dGlscy9fa2V5ZnJhbWVzLnNjc3MiLCIuLi9zYXNzL3V0aWxzL19taXhpbnMuc2NzcyIsIi4uL3Nhc3MvYmFzZS9fYmFzZS5zY3NzIiwiLi4vc2Fzcy9iYXNlL190eXBvZ3JhcGh5LnNjc3MiLCIuLi9zYXNzL2NvbXBvbmVudHMvX2J1dHRvbnMuc2NzcyIsIi4uL3Nhc3MvbGF5b3V0cy9faGVhZGVyLnNjc3MiLCIuLi9zYXNzL2xheW91dHMvX2Zvb3Rlci5zY3NzIiwiLi4vc2Fzcy9wYWdlcy9faW5kZXguc2NzcyIsIi4uL3Nhc3MvcGFnZXMvX21lbnVzLnNjc3MiLCIuLi9zYXNzL3BhZ2VzL19sYV9ub3RlX2VuY2hhbnRlZS5zY3NzIiwiLi4vc2Fzcy9wYWdlcy9fbGFfcGFsZXR0ZV9kdV9nb3V0LnNjc3MiLCIuLi9zYXNzL3BhZ2VzL19sZV9jaGljX2FfbGFfZnJhbmNhaXNlLnNjc3MiLCIuLi9zYXNzL3BhZ2VzL19sZV9kZWxpY2VfZGVzX3BhcGlsbGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZ0JBQWdCO0FDQWhCLFdBQUE7QUFxQkEsWUFBQTtBQUdBLGdCQUFBO0FDeEJBLHVDQUFBO0FBQ0E7RUFDRTtJQUNFLDJCQUFBO1lBQUEsbUJBQUE7RUZLRjtFRUZBO0lBQ0UsNkJBQUE7WUFBQSxxQkFBQTtFRklGO0VFREE7SUFDRSwyQkFBQTtZQUFBLG1CQUFBO0VGR0Y7QUFDRjtBRWRBO0VBQ0U7SUFDRSwyQkFBQTtZQUFBLG1CQUFBO0VGS0Y7RUVGQTtJQUNFLDZCQUFBO1lBQUEscUJBQUE7RUZJRjtFRURBO0lBQ0UsMkJBQUE7WUFBQSxtQkFBQTtFRkdGO0FBQ0Y7QUVBQSxvQ0FBQTtBQUNBO0VBQ0U7SUFDRSwwQ0FBQTtZQUFBLGtDQUFBO0VGRUY7RUVDQTtJQUNFLHlDQUFBO1lBQUEsaUNBQUE7RUZDRjtFRUVBO0lBQ0UsMENBQUE7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QUd2bkJFO0VVdEZGO0lWdUZJLGdCQUFBO0lBQ0EsVUFBQTtJQUNBLGdCQUFBO0VIMG5CRjtBQUNGOztBYXJzQkEsd0RBQUE7QUFDQTtFQUNFLGNaakJPO0FEeXRCVDs7QWFyc0JBO0VBQ0UsY1psQmE7QUQwdEJmOztBYXJzQkE7RUFDRSxjWnZCTztBRCt0QlQ7O0FhcnNCQSx5RUFBQTtBQUNBO0VWdkJFLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0FIZ3VCRjtBRy90QkU7RUFDRSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxPQUFBO0VBQ0EsU0FBQTtFQUNBLFFBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7RUFFQSxxRkFBQTtFQUFBLDhEQUFBO0VBQUEsK0RBQUE7RUFDQSx3Q0FBQTtFQUFBLG1DQUFBO0VBQUEsZ0NBQUE7QUhpdUJKO0FHeHRCRTtFQW5CQTtJQW9CRSxXQUFBO0VIMnRCRjtBQUNGO0FHbnVCRTtFQUNFLFdBQUE7QUhxdUJKOztBY3J3QkEsd0NBQUE7QUFDQTtFWENFLGFBQUE7RUFDQSxxQ0FBQTtFQUNBLGFBQUE7RUFDQSxvQkFBQTtFQUNBLG9CQUFBO0VBQ0Esd0NGZVc7VUVmWCxnQ0ZlVztFYW5CWCxxQkFBQTtFQUNBLHlCYlNLO0FEb3dCUDtBR2h1QkU7RVdoREY7SVhpREksZ0JBQUE7RUhtdUJGO0FBQ0Y7QUczdUJFO0VXMUNGO0lYMkNJLGtCQUFBO0VIOHVCRjtBQUNGO0FHeHNCRTtFV2xGRjtJWG1GSSxnQkFBQTtFSDJzQkY7QUFDRjs7QWN6eEJBLDJDQUFBO0FBQ0E7RUFDRSxnQkFBQTtFQUNBLFdBQUE7RUFDQSw2QkFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxjQUFBO0VBRUEscUZBQUE7RUFBQSw4REFBQTtFQUFBLCtEQUFBO0VBQ0EsNkJBQUE7RUFDQSxvQ0FBQTtBZDR4QkY7QUd4dUJFO0VXOURGO0lYK0RJLGNBQUE7RUgydUJGO0FBQ0Y7QUc1c0JFO0VXL0ZGO0lYZ0dJLGNBQUE7RUgrc0JGO0FBQ0Y7O0FjanlCQSx5RUFBQTtBQUNBO0VYVEUsa0JBQUE7RUFDQSxxQkFBQTtFQUNBLGVBQUE7QUg4eUJGO0FHN3lCRTtFQUNFLFdBQUE7RUFDQSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxTQUFBO0VBQ0EsUUFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtFQUVBLHFGQUFBO0VBQUEsOERBQUE7RUFBQSwrREFBQTtFQUNBLHdDQUFBO0VBQUEsbUNBQUE7RUFBQSxnQ0FBQTtBSCt5Qko7QUd0eUJFO0VBbkJBO0lBb0JFLFdBQUE7RUh5eUJGO0FBQ0Y7QUdqekJFO0VBQ0UsV0FBQTtBSG16QkoiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+/*# sourceMappingURL=main.css.map */

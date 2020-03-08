@@ -7,6 +7,7 @@
   margin: 0 10% 6% 10%;
   box-shadow: $box-shadow;
   @include mobile-smaller-font;
+  @include mobile-line-height;
   @include tablet-smaller-font;
 }
 
@@ -26,15 +27,28 @@
     background: -webkit-gradient(linear, left top, right top, from($color-1), to($color-2));
     background: linear-gradient(to right, $color-1 0%, $color-2 100%);
     transition: width 2s ease-in-out;
+    @include mobile-height;
   }
   &:hover:after {
     width: 100%;
   }
 }
 
+@mixin mobile-height {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    height: 3px;
+  }
+}
+
+@mixin mobile-line-height {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    line-height: 1.5em;
+  }
+}
+
 @mixin mobile-smaller-font {
   @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
 }
 
@@ -47,9 +61,9 @@
 
 @mixin mobile-medium-font {
   @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
-    font-size: 1.6em;
-    width: 50%;
-    margin-left: 24%;
+    font-size: 2.1em;
+    width: 55%;
+    margin-left: 22%;
   }
 }
 

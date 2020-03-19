@@ -1,4 +1,4 @@
-/* mixins */
+// mixins
 @mixin grid-menu{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -11,7 +11,7 @@
   @include tablet-smaller-font;
 }
 
-/* animation de transition de l'effet souligné */
+// animation de transition de l'effet souligné
 @mixin underline-animation($color-1, $color-2) {
   position: relative;
   text-decoration: none;
@@ -42,7 +42,67 @@
 
 @mixin mobile-line-height {
   @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
-    line-height: 1.5em;
+    line-height: 1.4em;
+  }
+}
+
+@mixin mobile-note-entree-align {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    line-height: 2.4em;
+  }
+}
+
+@mixin mobile-note-dish-align {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    line-height: 2em;
+  }
+}
+
+@mixin mobile-chic-entree-align {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    line-height: 2em;
+  }
+}
+
+@mixin mobile-chic-dish-align {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    line-height: 2.5em;
+  }
+}
+
+@mixin mobile-delice-entree-align {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    line-height: 1.9em;
+  }
+}
+
+@mixin mobile-delice-dish-align {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    line-height: 2em;
+  }
+}
+
+@mixin mobile-delice-price-align {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    line-height: 1.4em;
+  }
+}
+
+@mixin mobile-palette-entree-align {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    line-height: 2em;
+  }
+}
+
+@mixin mobile-palette-dish-align {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    line-height: 2.4em;
+  }
+}
+
+@mixin mobile-palette-price-align {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    line-height: 2.1em;
   }
 }
 
@@ -77,6 +137,43 @@
   @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
     grid-gap: 12px;
     margin: 12% 0 20% 0;
+  }
+}
+
+@mixin mobile-grid-menu-1 {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    grid-column: 2/8;
+    grid-row: 2/4;
+  }
+}
+
+@mixin mobile-grid-menu-2 {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    grid-column: 2/8;
+    grid-row: 4/6;
+  }
+}
+
+@mixin mobile-grid-menu-3 {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    grid-column: 2/8;
+    grid-row: 6/8;
+  }
+}
+
+@mixin mobile-grid-menu-4 {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    grid-column: 2/8;
+    grid-row: 8/10;
+  }
+}
+
+@mixin mobile-grid-soon {
+  @media screen and (min-width: map-get($breakpoints, mobile-min)) and (max-width: map-get($breakpoints, mobile-max)){
+    grid-column: 2/8;
+    grid-row: 10/12;
+    font-size: 1.2em;
+    width: 80%;
   }
 }
 

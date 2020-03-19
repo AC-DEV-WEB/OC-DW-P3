@@ -13,6 +13,7 @@
   grid-column: 2/5;
   grid-row: 2/4;
   box-shadow: $box-shadow;
+  @include mobile-grid-menu-1;
 }
 
 /* menu deux */
@@ -20,6 +21,7 @@
   grid-column: 5/8;
   grid-row: 2/4;
   box-shadow: $box-shadow;
+  @include mobile-grid-menu-2;
 }
 
 /* menu trois */
@@ -27,6 +29,7 @@
   grid-column: 2/5;
   grid-row: 4/6;
   box-shadow: $box-shadow;
+  @include mobile-grid-menu-3;
 }
 
 /* menu quatre */
@@ -34,6 +37,7 @@
   grid-column: 5/8;
   grid-row: 4/6;
   box-shadow: $box-shadow;
+  @include mobile-grid-menu-4;
 }
 
 /* mise en page de la section "Prochainement" */
@@ -50,7 +54,7 @@
   margin-top: 30px;
   width: 60%;
   cursor: default;
-  @include mobile-small-font;
+  @include mobile-grid-soon;
 }
 
 /* points de suspension de la section "Prochainement */

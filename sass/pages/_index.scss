@@ -59,13 +59,14 @@
 
 /* points de suspension de la section "Prochainement */
 .dot {
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	border-radius: 100px;
-	background-color: $yellow;
-	transform-origin: center;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: $yellow;
+  transform-origin: center;
   animation: dot-anim 1.4s infinite;
+  -webkit-animation: dot-anim 1.4s infinite;
 }
 
 .dot:nth-child(1) {
